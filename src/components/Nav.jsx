@@ -60,7 +60,7 @@ export default function Nav() {
             {/* burger toggle btns  */}
             {
                 menuToggle ?
-                    <div className='w-1/2 fixed right-0 z-50 mt-16 '>
+                    <div className='w-1/2 fixed right-0 top-0 z-50 mt-16 '>
                         <div className='h-screen flex flex-col text-slate-400 bg-purple-900'>
                             <Link to='/about'
                                 className='px-5 py-3 hover:bg-purple-600 text-white text-[14px] font-medium border-b-[1px] border-slate-400'
