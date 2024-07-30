@@ -3,9 +3,9 @@ import { HomeSlider } from '../components'
 
 export default function Home() {
     return (
-        <div className='mt-16 md:mt-20 xl:mt-24 pt-2 w-full min-h-screen bg-blue-700 text-white'>
+        <div className='mt-16 md:mt-20 xl:mt-24 pt-2 w-full min-h-screen bg-purple-900 text-slate-200'>
             <HomeSlider />
-            <div className='p-3 md:p-10 lg:text-xl xl:text-2xl flex flex-col gap-4 lg:gap-8'>
+            <div className='max-w-7xl mx-auto p-3 md:p-10 lg:text-lg flex flex-col gap-4 lg:gap-8'>
                 <h1 className='text-3xl lg:text-5xl xl:text-7xl font-semibold'>Springdale Public School</h1>
                 <div>
                     <p>We nurture young minds for a brighter future. Our dedicated staff, innovative curriculum, and vibrant community come together to create a supportive and enriching learning environment for all students.</p>
