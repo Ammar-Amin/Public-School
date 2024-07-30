@@ -1,5 +1,6 @@
 import React from 'react'
 import { HomeSlider } from '../components'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     let data = [
@@ -25,14 +26,14 @@ export default function Home() {
         <div className='pt-16 md:pt-20 xl:pt-24 w-full min-h-screen bg-purple-900 text-slate-200'>
             <HomeSlider data={data} />
             <div className='max-w-7xl mx-auto p-3 md:p-10 lg:text-lg flex flex-col gap-4 lg:gap-8'>
-                <h1 className='text-3xl lg:text-5xl xl:text-7xl font-semibold'>Springdale Public School</h1>
+                <h1 className='text-4xl lg:text-5xl xl:text-7xl font-semibold'>Springdale Public School</h1>
                 <div>
                     <p>We nurture young minds for a brighter future. Our dedicated staff, innovative curriculum, and vibrant community come together to create a supportive and enriching learning environment for all students.</p>
                     <p className='mt-4'>At Springdale Public School, we believe that every child has the potential to achieve greatness. Our mission is to provide a comprehensive education that fosters intellectual growth, creativity, and character development. We are committed to creating a safe and inclusive space where students can thrive academically, socially, and emotionally.</p>
                 </div>
                 <div>
-                    <h6 className='text-xl lg:text-3xl mb-1 font-semibold'>Our Values : </h6>
-                    <ul>
+                    <h6 className='mt-10 text-3xl lg:text-5xl mb-5 font-semibold'>Our Values : </h6>
+                    <ul className='flex flex-col gap-3'>
                         <li>
                             <span className='font-semibold'>Excellence</span> : Striving for the highest standards in teaching and learning.
                         </li>
@@ -50,7 +51,13 @@ export default function Home() {
                         </li>
                     </ul>
                 </div>
-                <p className='pb-10'>Join us at Springdale Public School, where education meets inspiration. Together, we can create a brighter future for our children.</p>
+                <p className='py-10 md:text-xl'>Join us at Springdale Public School, where education meets inspiration. Together, we can create a brighter future for our children. <br />
+                    <button className='mt-5 md:mt-10 px-6 py-2 bg-slate-200 hover:bg-white text-black font-medium'>
+                        <Link to='/academics' >
+                            Academics
+                        </Link>
+                    </button>
+                </p>
             </div>
 
         </div>

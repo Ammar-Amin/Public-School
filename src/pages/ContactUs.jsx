@@ -20,7 +20,7 @@ export default function ContactUs() {
     return (
         <div className='w-fu1l min-h-screen pt-[110px] p-7 text-white bg-purple-900 md:flex md:pt-40 md:pb-20 lg:px-16 lg:pt-[230px] lg:pb-32 xl:px-32'>
             {/* Section 1  */}
-            <div className='md:w-1/2 md:px-[4%] md:my-auto lg:w-3/5'>
+            <div className='my-10 md:w-1/2 md:px-[4%] md:my-auto lg:w-3/5'>
                 <h1 className='mb-3 text-5xl font-semibold lg:text-7xl'>Contact Us</h1>
                 {/* Contact details  */}
                 <div className='flex flex-col justify-center md:gap-2'>

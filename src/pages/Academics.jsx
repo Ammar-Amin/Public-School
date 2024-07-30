@@ -25,8 +25,8 @@ export default function Academics() {
                         <img src='https://th.bing.com/th/id/OIP.nmjyHPecad40Rqj-gbl4pQHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7' alt='academics' className='w-full max-h-[700px] p-4 object-cover' />
                     </div>
                     {/* academics  */}
-                    <div className='px-4 md:w-1/2 md:px-[4%] md:my-auto'>
-                        <div className='flex flex-col gap-4 lg:gap-10 lg:text-lg'>
+                    <div className='my-10 px-4 md:w-1/2 md:px-[4%] md:my-auto'>
+                        <div className='flex flex-col gap-10 lg:text-lg'>
                             <div>
                                 <h6 className='text-xl lg:text-3xl xl:text-4xl mb-1 lg:mb-3 font-semibold'>Comprehensive Curriculum</h6>
                                 <p>Our school offers a comprehensive curriculum from primary to senior secondary levels, ensuring a well-rounded education for all students.</p>
