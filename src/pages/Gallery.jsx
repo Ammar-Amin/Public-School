@@ -1,5 +1,6 @@
 import React from 'react'
 import video from '../assets/School_Infra.mp4'
+import { Link } from 'react-router-dom'
 
 export default function Gallery() {
 
@@ -56,7 +57,7 @@ export default function Gallery() {
                 <h2 className='text-lg md:text-3xl lg:text-5xl font-semibold absolute top-[40%] md:top-[45%] right-[10%]'>School Infrastructure</h2>
             </div>
             <h1 className='mt-10 mb-6 text-left text-2xl lg:text-4xl xl:text-6xl font-semibold'>School Events</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                 {photoData.map((photo, index) => (
                     <div key={index} className="bg-blue-600 hover:opacity-90 overflow-hidden rounded-xl">
                         <img
@@ -72,6 +73,11 @@ export default function Gallery() {
                     </div>
                 ))}
             </div>
+            <button className='mt-6 lg:mt-10 lg:text-xl px-8 py-2 font-semibold bg-slate-300 hover:bg-white text-black'>
+                <Link to='/students' >
+                    Our Students
+                </Link>
+            </button>
         </div>
     )
 }

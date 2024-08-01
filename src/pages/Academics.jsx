@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { HomeSlider } from '../components'
 
@@ -9,6 +9,11 @@ export default function Academics() {
         { id: 3, img: "https://th.bing.com/th/id/OIP.d-Rkf_Vd--nkP5IKHSvspgAAAA?w=289&h=124&c=7&r=0&o=5&dpr=1.3&pid=1.7" },
         { id: 4, img: "https://thumbs.dreamstime.com/z/education-learning-academics-concept-knowledge-77962418.jpg" },
     ]
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     return (
         <div className='w-full min-h-screen pt-16 md:pt-20 lg:pt-24 bg-purple-900 text-slate-200'>
             <HomeSlider data={data} />

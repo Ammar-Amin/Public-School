@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function ContactUs() {
 
@@ -16,6 +16,10 @@ export default function ContactUs() {
         alert("message send")
         setInput({ name: '', phone: '', email: '', message: '' })
     }
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     return (
         <div className='w-fu1l min-h-screen pt-[110px] p-7 text-white bg-purple-900 md:flex md:pt-40 md:pb-20 lg:px-16 lg:pt-[230px] lg:pb-32 xl:px-32'>

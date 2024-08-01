@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { HomeSlider } from '../components'
 import { Link } from 'react-router-dom'
 
@@ -21,6 +21,10 @@ export default function Home() {
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCI83RjjYwIojWlwSrkEyfjB5RTx0X6TCQYw&s",
         },
     ]
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
 
     return (
         <div className='pt-16 md:pt-20 xl:pt-24 w-full min-h-screen bg-purple-900 text-slate-200'>

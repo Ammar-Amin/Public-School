@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Gallery from './Gallery'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
@@ -88,8 +88,12 @@ export default function Faculty() {
         ]
     }
 
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     return (
-        <div className='w-full min-h-screen bg-purple-900 text-white'>
+        <div className='pb-10 w-full min-h-screen bg-purple-900 text-white'>
             <div className='max-w-7xl mx-auto p-3 md:p-10 '>
                 <div className='w-full min-h-screen lg:text-lg flex flex-col-reverse items-center justify-center md:flex-row gap-4 lg:gap-8'>
                     <div className='md:w-1/2'>

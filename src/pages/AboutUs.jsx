@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 export default function AboutUs() {
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     return (
         <div className='w-full min-h-screen bg-purple-900 text-slate-200'>
             <div className='pt-16 md:pt-20 lg:pt-24 w-full min-h-screen max-w-7xl mx-auto flex flex-col md:flex-row md:justify-center md:items-center'>

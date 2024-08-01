@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Students() {
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     return (
         <div className='w-full min-h-screen pt-16 md:pt-20 lg:pt-24 bg-purple-900 text-slate-200'>
             <img className='w-full max-h-[580px] object-cover' src='https://production-tcf.imgix.net/app/uploads/2018/05/18144925/GettyImages-862689938.jpg?auto=format%2Ccompress&q=80&fit=crop&w=1200&h=600' alt='Students' />

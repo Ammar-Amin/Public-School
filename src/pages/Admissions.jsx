@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Admissions() {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <div className='pt-16 md:pt-20 lg:pt-24 w-full min-h-screen bg-purple-900 text-white'>
             <img className='w-full max-h-[580px] object-cover' src='https://internationaljournalofresearch.files.wordpress.com/2020/06/images-32.jpeg?w=774' alt='admissions' />
