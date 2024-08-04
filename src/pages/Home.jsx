@@ -23,7 +23,11 @@ export default function Home() {
     ]
 
     useEffect(() => {
-        window.scroll(0, 0)
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "instant"
+        })
     }, [])
 
     return (

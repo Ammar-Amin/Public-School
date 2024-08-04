@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function Admissions() {
     useEffect(() => {
-        window.scroll(0, 0)
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "instant"
+        })
     }, [])
     return (
         <div className='pt-16 md:pt-20 lg:pt-24 w-full min-h-screen bg-purple-900 text-white'>
